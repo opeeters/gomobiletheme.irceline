@@ -7,3 +7,13 @@
  * @license GPL"
  *
  */
+
+
+/* Styles for non-webkit based mobile browsers */
+#portal-footer {
+    border-top: 2px solid #448;
+}
+
+#portal-header {
+    border-bottom: 2px solid #448;
+}

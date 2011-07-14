@@ -7,3 +7,252 @@
  * @license GPL"
  *
  */
+
+
+
+/**
+ * Styles for smartphone browsers (webkit based).
+ *
+ * Use images more extensively than lowend.css
+ */
+
+/* TODO: convert to CSS sprites */
+
+.documentFirstHeading {
+    text-shadow: 0px 2px 0px #ddd;	
+}
+
+#content ul {
+/*
+    list-style-image: url(++resource++gomobiletheme.basic/arrow-blue.png);
+*/
+}
+
+
+/* HEADER */
+
+#header {
+    /*
+    background-image: -moz-linear-gradient(top, #ddd, #eee 40%, #bbb);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDDDDD), to(#AAAAAA), color-stop(0.4, #eeeeee));
+    */
+}
+
+
+/* ACTIONS HEADER */
+
+#actions-header {
+    background-image: -moz-linear-gradient(top, #EEE, #CCC);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#CCC));
+    padding-right:10px;
+    padding-left:10px;
+}
+
+#mobile-site-actions li {
+    padding:5px;
+}
+
+#mobile-site-actions .action-search-selected {
+    background-image: -moz-linear-gradient(top, #f3ad2e, #fbebce);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3ad2e), to(#fbebce));
+}
+
+.back-text {
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    background-image: -moz-linear-gradient(left, #8c8c8c, #6b6b6b);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#8c8c8c), to(#6b6b6b));
+    text-shadow:0 1px 1px #666;
+}
+
+
+.back-text:hover {
+    background-image: -moz-linear-gradient(left, #8c8c8c, #6F6F3E);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#8c8c8c), to(#6F6F3E));
+}
+
+.back a:hover {
+    text-decoration:none;
+}
+
+
+
+/* SEARCH BOX TOP */
+
+#search-box-top {
+    background-image: -moz-linear-gradient(top, #fbebce, #f3ad2e);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbebce), to(#f3ad2e));
+}
+
+#search-box-top .searchform {
+    -moz-border-radius:2em;
+    -webkit-border-radius:2em;
+    -moz-box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+}
+
+/* iPhone fix: -webkit-appearance: none - http://mobiledrupal.com/content/styling-form-buttons-iphone-webkit-appearance*/
+#search-box-top .searchfield {
+    -moz-border-radius:2em;
+    -webkit-border-radius:2em;
+    -webkit-appearance: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#search-box-top .button {
+    -moz-border-radius:2em;
+    -webkit-border-radius:2em;
+    background:-moz-linear-gradient(center top , #7A7A7A, #454545) repeat scroll 0 0 transparent;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7A7A7A), to(#454545));
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+#search-box-top .button:hover {
+    background:-moz-linear-gradient(center top , #8F8762, #5F5A41) repeat scroll 0 0 transparent;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8F8762), to(#5F5A41));
+}
+
+
+/* CONTENT */
+
+
+/* FORMS */
+
+input[type=text],
+input[type=password],
+textarea, select {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+    -webkit-appearance: none;
+}
+
+
+/* SEARCH BOX BOTTOM */
+
+#search-box-bottom .searchfield {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 5px rgba(0,0,0,.2);
+    -webkit-appearance: none;
+}
+
+#search-box-bottom .button {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background:-moz-linear-gradient(center top , #7A7A7A, #454545) repeat scroll 0 0 transparent;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7A7A7A), to(#454545));
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+#search-box-bottom .button:hover {
+    background:-moz-linear-gradient(center top , #8F8762, #5F5A41) repeat scroll 0 0 transparent;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#454545), to(#5F5A41));
+}
+
+/* NAVIGATION */
+
+#portal-globalnav a {
+    text-shadow:0 1px 2px #fff;
+}
+
+
+/* LOGIN */
+
+.register {
+    text-shadow:0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.login-btn {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background:-moz-linear-gradient(center top , #88bbd4, #74B3CF) repeat scroll 0 0 transparent;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#88bbd4), to(#74B3CF));
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.login-btn:hover {
+    background:-moz-linear-gradient(center top , #5599BB, #317B9F) repeat scroll 0 0 transparent;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5599BB), to(#317B9F));
+}
+
+
+/* FOOTER */
+
+#footer {
+	
+}
+
+#portal-breadcrumbs {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    text-shadow:0 1px 2px #fff;
+}
+
+
+/* FOLDER LISTING */
+/* Automatic mobile folder listings at the end of the page - do iPhone style rounded corner navigation menu */
+
+#content ul.button-links {
+    border: 2px solid #ddd;
+    list-style: none;
+    
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -border-radius: 10px;
+    
+
+    padding: 0;
+	margin: 0;
+	margin-top: 1em;
+}
+
+#content .button-links li {
+	margin: 0;
+	padding: 0;
+}
+
+.button-links li a {     
+    background: transparent url(++resource++gomobiletheme.basic/navigation_arrow_grey.png) no-repeat center right;
+    padding: 5px 15px 5px 0;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+	display: block;
+}
+
+.button-links li:last-child a {
+    border: 0;
+}
+
+.button-links li a span {
+    margin: 1em 0 1em 0;
+    display: block;
+    width: 100%;    
+    padding-left: 5px;
+}
+
+.button-links li a:hover {
+    text-decoration: none;
+}     
+
+.button-links li:hover {
+    background: #ddd;
+    color: white;
+}
+
+/* Content and template specific adjustments */
+
+/* This is multicolor line */
+body.template-search .documentFirstHeading {
+	text-shadow: none;
+} 

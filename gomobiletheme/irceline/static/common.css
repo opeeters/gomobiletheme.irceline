@@ -7,3 +7,774 @@
  * @license GPL"
  *
  */
+
+
+
+/**
+ * Styles used by all mobile browsers.
+ *
+ */
+
+/* CSS reset a la Limi */
+* { margin: 0; padding: 0; }
+* :link,:visited { text-decoration:none }
+* ul,ol { list-style:none; }
+* li { display: inline; }
+* h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+* a img,:link img,:visited img { border:none } 
+a { outline: none; }
+table { border-spacing: 0; }
+img { vertical-align: middle; }
+
+body {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: #ddd;
+    color: black;
+}
+
+img {
+    border: 0;
+}
+
+h1 {
+    border-bottom: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 1.1em;
+}
+
+h3 {
+}
+
+ul {
+}
+
+
+#margins {
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+
+.clear {
+    clear:both;
+}
+
+
+/* 
+ * Do not look stupid on desktop browsers.
+ *
+ * If screen width is too wide, clip displayable area to 800 px.
+ */
+@media screen and (min-device-width: 850px) {
+        #margins {
+           -webkit-box-shadow: 0 0 4px black;
+            -moz-box-shadow: 0 0 4px black;
+            box-shadow: 0 0 4px black;
+            max-width: 800px;
+        }
+}
+
+
+/* HEADER */
+
+#header {
+    background: #FFF;
+    color: white;
+    text-align: left;
+    overflow: clip;
+    
+}
+
+#header a.text-only,
+#header a:text-only,
+#header a:text-only, {
+    color: #205C90;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+#header a.text-only:hover  {
+    background-color: #205C90;
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    padding: 0.5em;
+    float: left;
+}
+
+#logo img {
+    display: inline;
+}
+
+#language-chooser {
+    float: right;
+    padding-top:18px;
+    padding-right:7px;
+    color:#CCC;
+}
+
+#language-chooser li {
+    padding: 0 3px;
+}
+
+#language-chooser a {
+    color:#CCC;
+}
+
+
+/* ACTIONS HEADER */
+
+#actions-header {
+    background:#DDDDDD;
+    min-height:37px;
+}
+
+#mobile-site-actions {
+  list-style: none;
+  float: right;
+  border-left:1px solid #c6c6c6;
+  border-right:1px solid #e8e7e7;
+}
+
+#mobile-site-actions li {
+    float: left;
+    width:45px;
+    text-align:center;
+    border-left:1px solid #e8e7e7;
+    border-right:1px solid #c6c6c6;
+}
+
+#mobile-site-actions .action-search-selected {
+    background:#facc79;
+}
+
+.back {
+    margin:5px;
+    position:absolute;
+}
+
+.back-text {
+    background:#8c8c8c;
+    border:1px solid black;
+    color:#ddd;
+    float:left;
+    padding:1px 10px 1px 5px;
+    margin-left:13px;
+    border-top: 2px solid #666; 
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	border-left: 0;
+	height:20px;
+	max-width:80px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.back-arrow {
+    position:absolute;
+	width:0; 
+	height:0; 
+	border-top: 13px solid transparent; 
+	border-bottom: 13px solid transparent;
+	border-right: 13px solid #666;
+	border-left: 0;
+}
+
+.back-arrow-inner {
+    position:absolute;
+	width:0; 
+	height:0; 
+	border-top: 12px solid transparent; 
+	border-bottom: 12px solid transparent;
+	border-right: 12px solid #8c8c8c;
+	border-left: 0;
+    top:-12px;
+    left:3px;
+}
+
+/* Special fixes needed for simulator */
+
+.mobile-preview .back {
+	margin: 1px;
+}
+
+.mobile-preview .back-text {
+        padding: 2px;
+}
+
+@media screen and (min-device-width: 480px) {
+        
+        #mobile-site-actions li {
+            width:70px;
+        }
+        
+        .back {
+            margin:10px;
+        }
+
+        .back-text {
+            padding:5px 10px 5px 5px;
+        	height:20px;
+        	max-width:160px;
+        }
+
+        .back-arrow {
+        	border-top: 17px solid transparent; 
+        	border-bottom: 17px solid transparent;
+        	border-right: 17px solid #666;
+        	left:-4px;
+        }
+
+        .back-arrow-inner {
+        	border-top: 16px solid transparent; 
+        	border-bottom: 16px solid transparent;
+        	border-right: 16px solid #8c8c8c;
+            top:-16px;
+            left:3px;
+        }
+}
+
+
+
+/* SEARCH BOX TOP */
+
+.blackText {
+    color:#000!important;
+}
+
+#search-box-top {
+    display:none;
+    background:#facc79;
+    padding:10px;
+}
+
+#search-box-top .searchBar {
+    width:auto;
+    padding: 0 10px;
+}
+
+#search-box-top .searchBtn {
+    width:30px;
+}
+
+#search-box-top .searchform {
+    background:#FFF;
+    border:1px solid #D2D2D2;
+    display:inline-block;
+    width:100%;
+}
+#search-box-top input {
+    font-weight: normal!important;
+    color:#AAA;
+}
+#search-box-top .searchfield {
+    border:none;
+    background:transparent;
+    padding:7px 6px 6px 10px;
+    width:100%;
+}
+#search-box-top .button {
+    background:#c7c6c6;
+    border:none;
+    color:#FFFFFF;
+    font-size:12px;
+    height:27px;
+    width:40px;
+    float:right;
+    margin:5px;
+}
+
+
+/* CONTENT */
+
+#content {
+    padding: 0.5em;
+    background: #FFF;
+    color: black;
+}
+
+#content h2 {
+    margin-bottom: 0.5em;        
+}
+
+.documentFirstHeading {
+	margin-top: 0;
+}
+
+.documentDescription, .discreet, .documentByLine {
+    color: #999;
+    font-size: 85%;
+}
+
+.documentDescription,
+#content p,
+#content .description {
+    margin-bottom: 1em;
+}
+
+#content ul {
+	list-style: disc;
+	margin-left: 1.5em;
+}
+
+#content ul li {
+	display: list-item;
+	padding-bottom: 0.5em;
+}
+
+/* Force wrapping of very long words, like links */
+#content {
+    /*word-break: break-all;*/
+	word-wrap: break-word;
+}
+
+/* Makes easier to hit link lists */
+#content li {
+  margin-bottom: 0.5em;
+}
+
+/* no link underlinings */
+a,
+a:active,
+a:visited,
+.documentContent li a,
+.documentContent li a:active,
+.documentContent li a:visited,
+.documentContent p a,
+.documentContent p a:visited,
+.documentContent p a:active {
+    border: 0;
+    text-decoration: none;
+    color: #205C90;
+}
+
+a:hover,
+.documentContent li a:hover,
+.documentContent p a:hover {
+    text-decoration: underline;
+}
+
+/* Resized mobile images */
+
+.documentContext img.mobile-resized {
+    display: block;
+}
+
+/* Content styles */
+.image-right, .image-left {
+    border: none;
+}
+
+.documentByLine {
+    display:block;
+}
+
+
+/* FORMS */
+
+fieldset {
+    border:1px solid #DDD;
+    margin-top:1em;
+}
+
+legend {
+    color:#999;
+}
+
+.field {
+    padding: 1em;
+}
+
+.formHelp {
+    color: #999;
+}
+
+.fieldRequired {
+    background: white url(++resource++gomobile.mobile/required.gif) center left no-repeat;
+    padding: 0 0 0 8px;
+    color: white;
+}
+
+.error .fieldRequired {
+   color: #d00;
+}
+
+.legend,
+label {
+    font-weight: bold;
+}
+
+div.error {
+    /* Class for error indication in forms */
+    background-color: #fdc;
+    border: 1px solid #d00;
+    padding: 0.5em;
+    margin: 0 0 1em 0;
+    width: 95%;
+}
+
+/* Make text area text more visible than normal grey */
+input[type=text],
+input[type=password],
+textarea, select {
+    width: 90%;
+    border:1px solid #999;
+    font-weight: bold;
+    /* CSS reset causes problems for iPhone */
+   padding: 0.5em;
+}
+
+/* Make user inputed text more readable */
+input[type=text],
+input[type=password],
+textarea {
+    font-size: 1.2em;
+	font-weight: bold;
+    font-family: "Courier New" Courier monospace;
+}
+
+input[type=submit] {
+	font-size: 1.2em;
+	margin: 10px auto 30px auto;
+	display: block;
+}
+
+
+/* SEARCH */
+
+input[name=SearchableText] {
+	width: 55%;
+}
+
+.searchButton {
+    margin:0;
+    display:inline!important;
+}
+
+.searchResults dt {
+    
+}
+
+.searchResults .entry {
+	padding: 1em 0.5em 1em 0.5em;
+}
+
+.searchResults .entry:nth-child(2n+1) {
+        background: #eee;
+}
+
+.searchResults dt a {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+
+/* FOLDER LISTING */
+
+.folder-listing .entry {
+    padding: 1em 0.5em 1em 0.5em;
+    border-bottom: 1px dotted #ddd;
+}
+
+
+/* STATUS MESSAGES */
+
+dl.portalMessage {
+    background-color: #ffffe3;
+    border: 1px solid #996;
+}
+dl.portalMessage a {
+    color: black;
+    border: none;
+    text-decoration: underline;
+}
+dl.portalMessage dt {
+    background-color: #996;
+    font-weight: bold;
+    float: left;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+    color: White;
+    line-height: 1.25em;
+}
+dl.portalMessage dd {
+    padding: 0.5em 0.5em;
+    margin: 0;
+    line-height: 1.25em;
+}
+dl.warning {
+    border-color: #d80;
+}
+dl.warning dt {
+    background-color: #d80;
+}
+dl.error {
+    border-color: #d00;
+}
+dl.error dt {
+    background-color: #d00;
+}
+dl.warning {
+    border-color: #d80;
+}
+dl.warning dd {
+    background-color: #fd7;
+}
+dl.error {
+    border-color: #d80;
+}
+dl.error dd {
+    background-color: #fd7;
+}
+
+
+/* SEARCH BOX BOTTOM */
+
+#search-box-bottom {
+    background:#ebebeb;
+    margin:30px 0;
+    padding:10px 0 20px 0;
+    width:100%;
+}
+
+#search-box-bottom h2 {
+    margin:5px 10px;
+}
+
+#search-box-bottom input {
+    color:#AAA;
+    padding:10px 0;
+    margin:0;
+}
+
+#search-box-bottom .searchBar {
+    width:auto;
+    padding: 0 10px;
+}
+
+#search-box-bottom .searchBtn {
+    width:75px;
+}
+
+#search-box-bottom .searchfield {
+    border:1px solid #c7c6c6;
+    width:100%;
+    padding-left:10px;
+}
+
+#search-box-bottom .button {
+    background:#c7c6c6;
+    border:none;
+    color:#FFFFFF;
+    font-size:18px;
+    height:43px;
+    width:55px;
+    float:right;
+    margin-right:10px;
+}
+
+
+/* NAVIGATION */
+
+#portal-globalnav {
+    margin:30px 0px;
+    border-top:1px solid #e5e2c7;
+    font-weight:bold;
+}
+
+#portal-globalnav li {
+    background:#f8f5d8;
+    display: block;
+    border-top:1px solid #fcfbf1;
+    border-bottom:1px solid #e5e2c7;
+}
+
+#portal-globalnav li:hover {
+    background:#EBEBEB;
+}
+
+#portal-globalnav a {
+    color:#999999;
+}
+
+#portal-globalnav .button-body {
+    background:url("++resource++gomobiletheme.basic/navigation_arrow_grey.png") no-repeat scroll right center transparent;
+    display: block;
+    padding: 10px;
+}
+
+
+/* LOGIN */
+
+#login {
+    margin-bottom:40px;
+}
+
+.register {
+    width:50%;
+    border-right:1px solid #C2E0EF;
+    display:inline-block;
+    padding:5px 10px 5px 0;
+    color:#88bbd4;
+}
+
+.login-btn {
+    background:#88bbd4;
+    padding:5px 25px;
+    margin-right:15px;
+    float:right;
+    color:#FFF;
+    text-align:center;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+/* BREADCRUMBS */
+
+#portal-breadcrumbs {
+    background:#ddd;
+    min-height:27px;
+    border:1px solid #c7c6c6;
+    margin-bottom:20px;
+    float:left;
+    width:100%;
+}
+
+#portal-breadcrumbs a {
+    float:left;
+    padding:5px;
+    color:#8c8c8c!important;
+}
+
+#portal-breadcrumbs a:hover {
+    background-color:transparent!important;
+}
+
+#portal-breadcrumbs .last {
+    float:left;
+    padding:5px;
+    color:#8c8c8c;
+}
+
+#portal-breadcrumbs .home {
+   background:url("++resource++gomobiletheme.basic/actions/home.png") no-repeat scroll 10px 3px transparent;
+   overflow:hidden;
+   text-indent:-9999em;
+   width:25px;
+   
+}
+
+#portal-breadcrumbs .breadcrumbSeparator {
+/*    background:url(++resource++gomobiletheme.basic/actions/separator.png) no-repeat;
+    width:11px;
+    height:27px;*/
+    float: left;
+    margin-top:5px;
+    color:#8c8c8c;
+}
+
+
+/* FOOTER AND BATCHING CONTROLS */
+
+.listingBar {
+   background: #ddd;
+   margin: 0.5em 0 0.5em 0;
+   padding: 0.5em;
+}
+
+#footer {
+    padding: 10px;
+}
+
+#footer-text {
+    color:#888;
+}
+
+#footer-text a {
+    color:#205C90 !important;
+}
+
+#portal-breadcrumbs,
+#footer-text,
+#portal-sections {
+    font-size: 0.9em;
+}
+
+#footer a,
+#footer a:visited,
+#footer a:active,
+.listingBar a,
+.listingBar a:visited,
+.listingBar a:active  {
+    color: #205C90;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover,
+.listingBar a:hover {
+    background-color: #205C90;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.listingBar a,
+.listingBar .current {
+        margin-left: 1em;
+	padding: 0.5em;
+}
+
+
+/* SITE SECTIONS IN FOOTER */
+
+#portal-sections { list-style: none; text-align:center; padding: 0; margin-bottom: 1em; }
+#portal-sections li { display: inline; margin-bottom: 1.5px; }
+#portal-sections li a { padding: 0.5em; padding-right: 0.7em; }
+
+#footer-links { text-align: center; }
+
+#footer-text { text-align: center; }
+
+
+/* INDIVIDUAL TEMPLATE STYLING  */
+
+/* Add padding to default Plone folder listing view */
+
+.folder-listing .description {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+/* Separate automatic folder listing from content */
+
+.mobile-folder-listing-heading {
+    border-top: 1px dotted #aaa;
+    padding-top: 0.5em;
+	margin-top: 0.5em;
+    color: #666;
+}
+
+/* This will appear in the footer if the site has KSS enabled forms - since Javascript is missing we cant show it */
+ 
+.hiddenStructure,
+#kss-spinner {
+    display: none;
+}
