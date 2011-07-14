@@ -42,8 +42,8 @@
 /* ACTIONS HEADER */
 
 #actions-header {
-    background-image: -moz-linear-gradient(top, #EEE, #CCC);
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#CCC));
+    background-image: -moz-linear-gradient(top, #FFFFFF, #92DFF7);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#92DFF7));
     padding-right:10px;
     padding-left:10px;
 }
