@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: gomobiletheme.irceline
+Version: 0.1
+Summary: A theme for Go mobile for Plone
+Home-page: http://github.com/opeeters/
+Author: Olav Peeters
+Author-email: peeters@irceline.be
+License: GPL
+Description: Introduction
+        ============
+        
+        A theme for Go mobile for Plone 4 (IRCEL - CELINE)
+        
+        This product may contain traces of nuts.
+        
+        Changelog
+        =========
+        
+        0.1dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Keywords: gomobile theme IRCEL CELINE irceline
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
